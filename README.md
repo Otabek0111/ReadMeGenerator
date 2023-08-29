@@ -24,6 +24,11 @@ To use this application, you need to have Node.js installed on your system. Then
 2. Open a terminal and navigate to the project directory.
 3. Run `npm install` to install the required dependencies.
 
+
+## Demo Video
+Watch the demo video to see the project in action: [Demo Video](https://watch.screencastify.com/v/5SGzTtD9UGFdmyORl2Lb)
+
+
 ## Usage
 
 After the installation, you can use the application as follows:
@@ -47,12 +52,9 @@ Contributions are welcome! If you want to contribute to this project, please fol
 
 To test the application, follow the installation instructions and generate a README.md file using different inputs. Verify that the generated README meets the expectations and contains accurate information.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Questions
 
 If you have any questions or need further assistance, feel free to reach out:
 
 - GitHub: [Otabek0111](https://github.com/Otabek0111)
+- Email: Otabek.islomjonov11@gmail.com

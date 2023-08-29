@@ -14,7 +14,7 @@ function renderLicenseLink(license) {
   if (license === "none") {
     return "";
   } else {
-    return `[License](#lisence)`;
+    return `[License](#license)`;
   }
 }
 
@@ -25,13 +25,14 @@ function renderLicenseSection(license) {
     return "";
   } else {
     return `
-    ## License 
-    This project is covered under the ${license} license.
-
+## License 
+This project is covered under the ${license} license.
 
 `;
   }
 }
+
+// ... (other functions remain unchanged)
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(answers) {
@@ -44,7 +45,7 @@ function generateMarkdown(answers) {
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
-  - [License](#license)
+  - ${renderLicenseLink(answers.license)}
   - [Contributing](#contributing)
   - [Tests](#tests)
   - [Questions](#questions)
@@ -55,10 +56,7 @@ function generateMarkdown(answers) {
   ## Usage
   ${answers.usage}
   
-  ## License
-  This project is licensed under the ${
-    answers.license
-  } license. ${renderLicenseLink(answers.license)}
+  ${renderLicenseSection(answers.license)}  
   
   ## Contributing
   ${answers.contribute}
@@ -70,6 +68,7 @@ function generateMarkdown(answers) {
   If you have any questions or need further assistance, feel free to reach out:
   
   - GitHub: [${answers.username}](https://github.com/${answers.username})
+  - Email: ${answers.email}
 `;
 }
 
